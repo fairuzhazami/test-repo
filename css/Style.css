@@ -1,0 +1,123 @@
+
+@import url(../css/fonts.css);
+
+html, body{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    
+}
+
+:root{
+
+  /*...Theme color...*/
+  --light-brown:#dda15e;
+  --text-gray: #fefae0;
+  --brown: #bc6c25;
+  --green:#283618;
+  --light-green:#606c38;
+  --text-gray:#403d39;
+
+    /*...Gradient color...*/
+    --cloud: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+
+
+  /*...Theme font family...*/
+--Roboto: 'Roboto';
+--Poppins:'poppins';
+--Ubuntu:'Ubuntu';
+}
+
+/*.............Global Classes..............*/
+
+a{
+    text-decoration: none;
+    color: var(--text-gray);
+}
+
+ul{
+    list-style-type: none;
+
+}
+
+.flex-row{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+}
+/*......X......Global Classes.......X......*/
+
+/*.................navbar................*/
+
+.nav{
+    background: var(--cloud);
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 10vh;
+    overflow: hidden;
+}
+
+.nav-menu{
+    justify-content: space-between;
+}
+
+.nav.toggle-collapse,.toggle-icons{
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+}
+
+.nav.toggle-collapse,.toggle-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+
+}
+
+.nav.toggle-icons{
+    font-size: 1.4rem;
+    color: #403d39;
+}
+
+.collapse{
+    height: 40rem;
+}
+
+
+.nav-brand a{
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    display: block;
+    font-family: var(--Roboto);
+    font-size: 1.6rem;
+
+}
+
+.nav-item{
+    display: flex;
+    margin: 0;
+
+}
+
+.nav-link{
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    font-family: var(--Roboto);
+
+}
+
+.social.text-gray{
+    padding: 1.4rem 0;
+}
+
+/*.......x.........navbar........x.......*/
+
+
+/*...Viewport less then or equal to 750px...*/
+@media only screen and (max-width:750px){
+    .nav-menu,.nav-item{
+        flex-direction: column;
+    }
+}
